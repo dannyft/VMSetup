@@ -32,6 +32,7 @@ alias apt-search="apt-cache search"
 alias apt-install="sudo apt install"
 alias search="firefox search"
 alias http-server-here="python3 -m http.server"
+alias ftp-server-here="python3 -m pyftpdlib"
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
