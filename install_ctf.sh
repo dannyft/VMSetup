@@ -11,7 +11,7 @@ if [ ! -d ~/tools ]; then
 fi
 
 git clone https://github.com/BC-SECURITY/Empire ~/tools/Empire
-git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS ~/tools/winPEAS
+git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite ~/tools/winPEAS
 git clone https://github.com/swisskyrepo/PayloadsAllTheThings ~/tools/PayloadsAllTheThings
 git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester ~/tools/Windows-Exploit-Suggester
 git clone https://github.com/ffuf/ffuf ~/tools/ffuf 
