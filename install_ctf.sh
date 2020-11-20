@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt install git gobuster golang wget nmap masscan build-essential gcc-mingw-w64
+sudo apt install git gobuster golang wget nmap masscan build-essential gcc-mingw-w64 powershell-empire
 
 sudo systemctl enable postgresql
 sudo systemctl start postgresql
@@ -21,8 +21,12 @@ git clone https://github.com/PowerShellMafia/PowerSploit ~/tools/PowerSploit
 git clone https://github.com/SpiderLabs/Responder ~/tools/Responder
 git clone https://github.com/danielmiessler/SecLists ~/tools/SecLists
 git clone https://github.com/SecWiki/windows-kernel-exploits ~/tools/windows-kernel-exploits
-git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite ~/privilege-escalation-awesome-scripts-suite
+git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite ~/tools/privilege-escalation-awesome-scripts-suite
+git clone https://github.com/Hackplayers/evil-winrm.git ~/tools/evil-winrm
 
+sudo ~/tools/Empire/setup/install.sh
+
+cd ~/tools/evil-winrm
 sudo gem install evil-winrm
 
 wget http://pentestmonkey.net/tools/php-reverse-shell/php-reverse-shell-1.0.tar.gz -O ~/tools/php-reverse-shell-1.0.tar.gz
