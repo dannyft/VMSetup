@@ -32,6 +32,8 @@ sudo gem install evil-winrm
 wget http://pentestmonkey.net/tools/php-reverse-shell/php-reverse-shell-1.0.tar.gz -O ~/tools/php-reverse-shell-1.0.tar.gz
 wget https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip -O ~/tools/ghidra_9.1.2.zip
 
+git clone https://github.com/projectdiscovery/nuclei.git ~/tools/nuclei; cd ~/tools/nuclei/v2/cmd/nuclei/; go build
+
 #
 # Install pwntools for Python3
 #
@@ -39,3 +41,4 @@ sudo apt-get install python3 python3-pip python3-dev git libssl-dev libffi-dev b
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade git+https://github.com/Gallopsled/pwntools.git@dev
 
+echo 'set disassembly-flavor intel' > ~/.gdbinit
